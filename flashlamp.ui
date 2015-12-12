@@ -48,8 +48,8 @@
      <widget class="QLCDNumber" name="base_lcd_number">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-        <horstretch>1</horstretch>
-        <verstretch>1</verstretch>
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
        </sizepolicy>
       </property>
      </widget>
@@ -104,8 +104,8 @@
      <widget class="QLCDNumber" name="arm_lcd_number">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-        <horstretch>1</horstretch>
-        <verstretch>1</verstretch>
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
        </sizepolicy>
       </property>
      </widget>
