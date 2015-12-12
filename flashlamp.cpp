@@ -44,7 +44,7 @@ void flashlamp::mqtt_setup()
 {
     try{
         client->setHost("192.168.43.137");
-        client->setPort(1884);
+        client->setPort(1883);
         //client->setUsername
         client->connect();
 
@@ -66,8 +66,10 @@ void flashlamp::onMQTT_disconnected()
 }
 void flashlamp::mqtt_pub(QString topic, QString value)
 {
+        client->unsubscribe(mqtt_topic_sub);
         QMQTT::Message msg(0,topic,value.toUtf8());
         client->publish(msg);
+        mqtt_sub(mqtt_topic_sub);
 }
 void flashlamp::mqtt_sub(QString topic)
 {
